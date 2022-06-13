@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_dealer_honda_jenis,access.dealer_honda_jenis,model_dealer_honda_jenis,,1,1,1,1
+access_dealer_honda_motor,access.dealer_honda_motor,model_dealer_honda_motor,,1,1,1,1

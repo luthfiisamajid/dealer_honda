@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+
+    <!-- dealer_honda.jenis tree view -->
+    <record id="dealer_honda_jenis_view_tree" model="ir.ui.view">
+        <field name="name">Jenis</field>
+        <field name="model">dealer_honda.jenis</field>
+        <field name="arch" type="xml">
+            <tree>
+                <!-- Add your fields here -->
+                <field name="name"/>
+                <field name="transmisi"/>
+                <field name="kapasitasoli"/>
+            </tree>
+        </field>
+    </record>
+
+
+
+    <!-- dealer_honda.jenis form view -->
+    <record id="dealer_honda_jenis_view_form" model="ir.ui.view">
+        <field name="name">input Jenis</field>
+        <field name="model">dealer_honda.jenis</field>
+        <field name="arch" type="xml">
+            <form string="">
+                <sheet>
+                    <group>
+                        <!-- Add your fields here -->
+                        <field name="name"/>
+                        <field name="transmisi"/>
+                        <field name="kapasitasoli"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+
+    <!-- dealer_honda.jenis action window -->
+    <record id="dealer_honda_jenis_action" model="ir.actions.act_window">
+        <field name="name">Jenis</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">dealer_honda.jenis</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+
+    <!-- This Menu Item must have a parent and an action -->
+    <menuitem id="dealer_honda_jenis_menu_act" 
+              name="JENIS" 
+              parent="dealer_honda_menu_categ" 
+              action="dealer_honda_jenis_action" 
+              sequence="20"/>
+</odoo>
